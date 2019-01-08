@@ -1,0 +1,19 @@
+net: "/media/omnisky/b380e387-e2de-4922-9e7a-cc422db55426/fzl/Deblur_SR_train_flow1.prototxt"
+#Deblur_SR_train.prototxt
+test_iter: 1 # number of iterations per step
+test_interval: 10000000 # never test
+test_initialization: false # don't run validation when loading
+base_lr: 0.001 #3.16e-3
+lr_policy: "fixed"
+display: 100
+max_iter: 1000000
+momentum: 0.9
+#clip_gradients: 100
+momentum2: 0.99
+delta:1e-8
+weight_decay: 0
+snapshot: 2500
+snapshot_prefix: "/media/omnisky/b380e387-e2de-4922-9e7a-cc422db55426/fzl/fnew_model/deblur_sr_flow2"
+solver_mode: GPU
+type: "Adam"
+average_loss: 100
