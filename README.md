@@ -11,7 +11,7 @@ layers, bright yellow box represents PRelu activation operation, sky blur box re
 marks batch normalization (BN) layers.The benefits of employing such a cooperative learning enabled CNN model typically lie in: 1) adapting to the degradation type mismatch in a certain degree, 2) no need to pay special attention to the order of multiple degenerations, and 3) maintaining the independence of sub-tasks.</br>
 
 <br>An example of residual structure</br>
-
+![image](https://github.com/hengliusky/Cooperative-Learning-Deblur-SR/blob/master/imgs/residual.png)
 <br>Thanks to good characteristics of deep residual learning , we utilize the improved residual structure to construct the upper sub-CNN for image SR. Each improved residual unit contains a pair of symmetrical convolution and deconvolution layers with PReLU activation and a scale factor β. In addition, another bypass scale factor α is also introduced in each residual unit. Usually, we make the sum of β and α equal one.</br>
 
 <br>An example of recursive residual structure</br>
@@ -34,7 +34,7 @@ marks batch normalization (BN) layers.The benefits of employing such a cooperati
 * **Train Dateset**
 <br>Utilze train dataset from GOPRO(train) to train cooperative learning deep network</br>
 * **Test Dateset** 
-<br>Utilze dataset from GOPRO(test) and Lai et al. datasetto test cooperative learning deep network</br>
+<br>Utilze dataset from GOPRO(test) and Lai et al. dataset to test cooperative learning deep network</br>
 
 * **Data generation**
  <br>./matlab/generate_mod.m Convert training images to HDF5 files</br>
@@ -54,6 +54,6 @@ marks batch normalization (BN) layers.The benefits of employing such a cooperati
 ### 5) Test
  <br> You can download the corresponding model from https://drive.google.com/drive/folders/1NyUnDoX1UvuxlZKFuh_pkk3tq-wuTbl0?usp=sharing to ./model folder and use the script in ./test for your images test.</br>
   <br>We convert RGB images to YCbCr and only use the Y channel for performance comparisions. PSNR and SSIM are objective evaluation indicators. </br>
-  ![image](https://github.com/hengliusky/Cooperative-Learning_Deblur_SR/blob/master/imgs/compare.png)
+  ![image](https://github.com/hengliusky/Cooperative-Learning-Deblur-SR/blob/master/imgs/compare1.png)
   <br>Visual comparisons of different methods: the first row images come from GOPRO datset; the second row images comes from the dataset of Lai et al.</br>
-<br>For more details, please refer to the paper.</br>
+<br>For more details, please refer to the paper.(Title:Cooperative Learning a Deep Network for Single Image Simultaneous Super-resolution and Motion Deblurring)</br>
