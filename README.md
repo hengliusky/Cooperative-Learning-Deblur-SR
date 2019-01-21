@@ -50,7 +50,7 @@
   <br>deblur_sr_flow2_iter_202500.caffemodel</br>
   
 ### 5) Test
- <br> You can download the corresponding model from https://drive.google.com/drive/folders/1NyUnDoX1UvuxlZKFuh_pkk3tq-wuTbl0?usp=sharing to ./model folder and use the script in ./test for your images test.</br>
+ <br> You can select the corresponding model from ./model folder and use the script in ./test for your images test.</br>
   <br>We convert RGB images to YCbCr and only use the Y channel for performance comparisions. PSNR and SSIM are objective evaluation indicators. </br>
   ![image](https://github.com/hengliusky/Cooperative-Learning-Deblur-SR/blob/master/imgs/compare1.png)
   <br>Visual comparisons of different methods: the first row images come from GOPRO datset; the second row images comes from the dataset of Lai et al.</br>
