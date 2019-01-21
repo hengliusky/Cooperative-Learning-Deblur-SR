@@ -55,6 +55,6 @@
   ![image](https://github.com/hengliusky/Cooperative-Learning-Deblur-SR/blob/master/imgs/compare1.png)
   <br>Visual comparisons of different methods: the first row images come from GOPRO datset; the second row images comes from the dataset of Lai et al.</br>
    <br>In order to investigate whether the order of multiple degradation affects the performance of the proposed model, we compare the recovery effect of different models trained by different degradation order images.</br>
-   ![image](https://github.com/hengliusky/Cooperative-Learning-Deblur-SR/blob/master/imgs/compare1.png)
+   ![image](https://github.com/hengliusky/Cooperative-Learning-Deblur-SR/blob/master/imgs/different_order.png)
    <br>it is clear that the effects of different degeneration order on image quality deterioration are almost the same, and the degraded images with different degeneration order can be restored to obtain equally good recovery images by our approach.</br>
 <br>For more details, please refer to the paper.(Title:Cooperative Learning a Deep Network for Single Image Simultaneous Super-resolution and Motion Deblurring)</br>
