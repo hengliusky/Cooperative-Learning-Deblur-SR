@@ -6,9 +6,7 @@
 ## 2. The proposed Cooperative Learning Deep Network
 <br>The detailed architecture of cooperative learning based joint image SR and deblurring network is shown in the below.</br>
 ![image](https://github.com/hengliusky/Cooperative-Learning_Deblur_SR/blob/master/imgs/model.png)
-<br>Our proposed deep network contains two sub-CNNs, where one is for HR details recovery and the other is deployed for motion details acquisition. At the same time, the two sub-CNNs are grouped cooperatively to reconstruct the final sharp and HR image.we use different color boxes to indicate diverse operations: Orange red box indicates convolution layers, grass green box corresponds to deconvolution
-layers, bright yellow box represents PRelu activation operation, sky blur box refers to sum operation, and brow box
-marks batch normalization (BN) layers.The benefits of employing such a cooperative learning enabled CNN model typically lie in: 1) adapting to the degradation type mismatch in a certain degree, 2) no need to pay special attention to the order of multiple degenerations, and 3) maintaining the independence of sub-tasks.</br>
+<br>Our proposed deep network contains two sub-CNNs, where one is for HR details recovery and the other is deployed for motion details acquisition. At the same time, the two sub-CNNs are grouped cooperatively to reconstruct the final sharp and HR image.The benefits of employing such a cooperative learning enabled CNN model typically lie in: 1) adapting to the degradation type mismatch in a certain degree, 2) no need to pay special attention to the order of multiple degenerations, and 3) maintaining the independence of sub-tasks.</br>
 
 <br>An example of residual structure</br>
 ![image](https://github.com/hengliusky/Cooperative-Learning-Deblur-SR/blob/master/imgs/residual.png)
@@ -56,4 +54,7 @@ marks batch normalization (BN) layers.The benefits of employing such a cooperati
   <br>We convert RGB images to YCbCr and only use the Y channel for performance comparisions. PSNR and SSIM are objective evaluation indicators. </br>
   ![image](https://github.com/hengliusky/Cooperative-Learning-Deblur-SR/blob/master/imgs/compare1.png)
   <br>Visual comparisons of different methods: the first row images come from GOPRO datset; the second row images comes from the dataset of Lai et al.</br>
+   <br>In order to investigate whether the order of multiple degradation affects the performance of the proposed model, we compare the recovery effect of different models trained by different degradation order images.</br>
+   ![image](https://github.com/hengliusky/Cooperative-Learning-Deblur-SR/blob/master/imgs/compare1.png)
+   <br>it is clear that the effects of different degeneration order on image quality deterioration are almost the same, and the degraded images with different degeneration order can be restored to obtain equally good recovery images by our approach.</br>
 <br>For more details, please refer to the paper.(Title:Cooperative Learning a Deep Network for Single Image Simultaneous Super-resolution and Motion Deblurring)</br>
