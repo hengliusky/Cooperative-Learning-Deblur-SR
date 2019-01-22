@@ -10,7 +10,7 @@
 
 <br>An example of residual structure</br>
 ![image](https://github.com/hengliusky/Cooperative-Learning-Deblur-SR/blob/master/imgs/residual.png)
-<br>Thanks to good characteristics of deep residual learning , we utilize the improved residual structure to construct the upper sub-CNN for image SR. Each improved residual unit contains a pair of symmetrical convolution and deconvolution layers with PReLU activation and a scale factor β. In addition, another bypass scale factor α is also introduced in each residual unit. Usually, we make the sum of β and α equal one.</br>
+<br>Thanks to good characteristics of deep residual learning, we utilize the improved residual structure to construct the upper sub-CNN for image SR. Each improved residual unit contains a pair of symmetrical convolution and deconvolution layers with PReLU activation and a scale factor β. In addition, another bypass scale factor α is also introduced in each residual unit. Usually, we make the sum of β and α equal one.</br>
 
 <br>An example of recursive residual structure</br>
 ![image](https://github.com/hengliusky/Cooperative-Learning_Deblur_SR/blob/master/imgs/recursive%20residual%20struct.png)
@@ -30,9 +30,9 @@
 <br>***①GOPRO Dateset***(Refer to:Nah, S.; Kim, T. H.; and Lee, K. M. 2017. Deep multi-scale convolutional neural network for dynamic scene deblurring. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, 3883–3891.)：GOPRO is a natural image sequences dataset which has a total of 2103 training HR image pairs (the blurry and the sharp one) and 1111 test blurry ones and each image keeps the size of 1280 * 720. In GOPRO dataset, the motion blurred image is obtained by averaging several neighboring frame images.</br>
 <br>***②Lai et al. Dateset***(Refer to:Lai, W.-S.; Huang, J.-B.; Hu, Z.; Ahuja, N.; and Yang, M.- H. 2016. A comparative study for single image blind deblurring. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, 1701–1709.)：the dataset of Lai et al. is a synthetic blurred image dataset. Each degraded image (the size varies from 502×351 to 1280×680) in the dataset comes from the convolution of a corresponding sharp image with a blur kernel (its size may range from 21 × 21 to 75 × 75). Note that Lai et al.’s dataset contains both uniform and non-uniform blurred images.</br>
 * **Train Dateset**
-<br>Utilze train dataset from GOPRO(train) to train cooperative learning deep network</br>
+<br>Utilize train dataset from GOPRO(train) to train cooperative learning deep network</br>
 * **Test Dateset** 
-<br>Utilze dataset from GOPRO(test) and Lai et al. dataset to test cooperative learning deep network</br>
+<br>Utilize dataset from GOPRO(test) and Lai et al. dataset to test cooperative learning deep network</br>
 
 * **Data generation**
  <br>./matlab/generate_mod.m Convert training images to HDF5 files</br>
